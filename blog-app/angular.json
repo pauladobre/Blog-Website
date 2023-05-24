@@ -25,7 +25,7 @@
               "src/assets"
             ],
             "styles": [
-              "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "C:/Users/Paula/Desktop/Blog App/Blog-Website/blog-app/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
              
             ],
@@ -96,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
