@@ -1,6 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 @import url(https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+@import "~@fortawesome/fontawesome-free/css/all.css";
 
 :root {
     --light-yellow: #FFD065;
@@ -15,4 +16,42 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Amatic Sc', sans-serif;
+    font-weight: bold;
+    color: text;
+    padding: 5px 0 12px;
+    position: relative;
+
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    left: 5%;
+    bottom: 16px;
+    width: 130px;
+    height: 14px;
+    transform: skew(-12deg) translateX(-50%);
+    background: var(--orange);
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.button {
+    color: white;
+    background-color: var(--orange);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    width: 150px;
+    border: none;
+    /* border-radius: 10px; */
+    filter: drop-shadow(0px 4px 4px #D9D9D9);
+}
+
+.button:hover{
+    background-color: #d93b0f;
 }

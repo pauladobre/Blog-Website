@@ -26,7 +26,8 @@
             ],
             "styles": [
               "C:/Users/Paula/Desktop/Blog App/Blog-Website/blog-app/node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
              
             ],
             "scripts": [

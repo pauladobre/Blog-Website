@@ -1,26 +1,10 @@
-.header-img{
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top:0;
-    left:0;
+.header-image {
+  background-image: url("/assets/images/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  
 }
 
 
-/* .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .overlay .container {
-    color: #fff;
-    padding: 20px;
-  } */

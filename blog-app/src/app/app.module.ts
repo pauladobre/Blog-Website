@@ -11,6 +11,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SinglePostComponent } from './components/single-post/single-post.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { LatestArticleComponent } from './components/latest-article/latest-article.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HeaderComponent,
     SinglePostComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LatestArticleComponent
   ],
   imports: [
     BrowserModule,
