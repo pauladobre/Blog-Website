@@ -1,1 +1,18 @@
-@import "bootstrap/dist/css/bootstrap.min.css"
+@import "bootstrap/dist/css/bootstrap.min.css";
+@import url(https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap);
+
+:root {
+    --light-yellow: #FFD065;
+    --dark-yello: #FFB400;
+    --dark-green: #20AE80;
+    --turquoise: #A0DED0;
+    --orange: #FF4615;
+    --text: #2C2C2C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}

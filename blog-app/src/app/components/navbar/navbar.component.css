@@ -1,4 +1,21 @@
 .bg-blur {
     background: transparent;
     backdrop-filter: blur(10px);
+    background-color: var(--light-yellow);
+  }
+
+  .nav-link{
+    color: var(--text);
+    font-family: "Amatic SC", sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    margin-right: 41px;
+  }
+
+  nav{
+    height: 70px;
+  }
+
+  .navbar-brand{
+    margin-left: 41px;
   }
