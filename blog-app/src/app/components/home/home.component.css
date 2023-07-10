@@ -1,0 +1,23 @@
+.article-section{
+    background-color:var(--beige);
+}
+
+h1 {
+    position: relative;
+    z-index: 2;
+  }
+  
+  h1::before {
+    content: "";
+    position: absolute;
+    left: 46%;
+    bottom: 16px;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 14px;
+    background: var(--green);
+    border-radius: 10px;
+    z-index: -1;
+  }
+  
+  

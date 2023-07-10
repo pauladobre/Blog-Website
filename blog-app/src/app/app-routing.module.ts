@@ -4,12 +4,13 @@ import { SinglePostComponent } from './components/single-post/single-post.compon
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {path: 'post', component: SinglePostComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent},
-  // {path:'', component: HeaderComponent}
+  { path: '', component: HomeComponent },
 ];
 
 @NgModule({

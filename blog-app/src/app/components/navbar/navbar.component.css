@@ -1,7 +1,9 @@
 .bg-blur {
     background: transparent;
     backdrop-filter: blur(10px);
-    background-color: var(--light-yellow);
+  
+    background-color: var(--yellow);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   }
 
   .nav-link{

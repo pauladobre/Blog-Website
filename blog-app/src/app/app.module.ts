@@ -12,6 +12,8 @@ import { SinglePostComponent } from './components/single-post/single-post.compon
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { LatestArticleComponent } from './components/latest-article/latest-article.component';
+import { HomeComponent } from './components/home/home.component';
+import { TipsComponent } from './components/tips/tips.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { LatestArticleComponent } from './components/latest-article/latest-artic
     SinglePostComponent,
     AboutComponent,
     ContactComponent,
-    LatestArticleComponent
+    LatestArticleComponent,
+    HomeComponent,
+    TipsComponent
   ],
   imports: [
     BrowserModule,

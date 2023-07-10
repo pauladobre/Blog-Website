@@ -4,11 +4,14 @@
 @import "~@fortawesome/fontawesome-free/css/all.css";
 
 :root {
-    --light-yellow: #FFD065;
-    --dark-yello: #FFB400;
-    --dark-green: #20AE80;
-    --turquoise: #A0DED0;
-    --orange: #FF4615;
+    --beige: #F4EED9;
+    --yellow: #FFB400;
+    --lime:#D1DA33;
+    --green: #03817C;
+    --green-hover: #076763;
+    --turquoise: #01BDC3;
+    --purple: #9B0059;
+    --purple-hover:#861154;
     --text: #2C2C2C;
 }
 
@@ -24,7 +27,6 @@ h1 {
     color: text;
     padding: 5px 0 12px;
     position: relative;
-
 }
 
 h1::before {
@@ -35,14 +37,15 @@ h1::before {
     width: 130px;
     height: 14px;
     transform: skew(-12deg) translateX(-50%);
-    background: var(--orange);
+    background: #9B0059;
     z-index: -1;
     border-radius: 10px;
 }
 
 .button {
     color: white;
-    background-color: var(--orange);
+    background-color:#01BDC3;
+    /* background-color: var(--orange); */
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
@@ -53,5 +56,5 @@ h1::before {
 }
 
 .button:hover{
-    background-color: #d93b0f;
+    background-color: #048885;
 }
