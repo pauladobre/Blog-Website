@@ -21,3 +21,8 @@
   .navbar-brand{
     margin-left: 41px;
   }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  

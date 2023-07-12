@@ -14,6 +14,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { LatestArticleComponent } from './components/latest-article/latest-article.component';
 import { HomeComponent } from './components/home/home.component';
 import { TipsComponent } from './components/tips/tips.component';
+import { DestinationsComponent } from './components/destinations/destinations.component';
+import { CardImageComponent } from './components/card-image/card-image.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { TipsComponent } from './components/tips/tips.component';
     ContactComponent,
     LatestArticleComponent,
     HomeComponent,
-    TipsComponent
+    TipsComponent,
+    DestinationsComponent,
+    CardImageComponent
   ],
   imports: [
     BrowserModule,
