@@ -1,4 +1,4 @@
-.card-img-top{
+.img-fluid{
     margin-top: 140px;
 }
 
@@ -12,4 +12,36 @@ h1{
 
 .col-md-3{
     margin-top: 60px;
+}
+
+.card {
+    margin-bottom: 50px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+.card-title {
+    text-align: center;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+
+a:hover {
+    color: var(--purple-hover);
+}
+
+.hover-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.hover-card:hover {
+    transform: scale(1.05);
 }

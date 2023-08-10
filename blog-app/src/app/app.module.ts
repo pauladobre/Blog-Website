@@ -7,7 +7,6 @@ import { environment } from 'src/environments/environment.development';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { FooterComponent } from './components/footer/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -25,7 +24,6 @@ import { ArticleComponent } from './components/article/article.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    LoginComponent,
     RegisterComponent,
     FooterComponent,
     HeaderComponent,

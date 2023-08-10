@@ -5,5 +5,6 @@ export interface Post {
     summary: string;
     id: string | null;
     content:string;
+    permalink:string;
   }
   
