@@ -41,4 +41,17 @@ export class PostService {
     return this.asf.doc(`posts/${postId}`).valueChanges();
   }
 
+
+  loadPinned() {
+    return this.asf.collection('posts', ref => ref.where('isPinned', '==', true)).snapshotChanges().pipe(
+      map((actions: any[]) => {
+        return actions.map((a: { payload: { doc: { id: any; data: () => any; }; }; }) => {
+          const id = a.payload.doc.id;
+          const data = a.payload.doc.data();
+          return { ...data, id };
+        });
+      })
+    );
+  }
+
 }
