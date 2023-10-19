@@ -11,6 +11,7 @@ import { PostService } from 'src/app/services/post.service';
 export class SinglePostComponent implements OnInit {
   destinationPosts: Array<Post> = [];
   postData: any;
+  
   constructor(private postService: PostService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
