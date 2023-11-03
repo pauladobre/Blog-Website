@@ -16,6 +16,7 @@
                 <img class="card-img" src="assets/images/america.jpg" alt="North America">
             </div>
         </div>
+
         <div class="col-lg-4" (click)="loadArticles('Europe')">
             <div class="card hover-card">
                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -26,6 +27,7 @@
                 <img class="card-img" src="assets/images/europe.jpg" alt="Destination 2">
             </div>
         </div>
+        
         <div class="col-lg-4" (click)="loadArticles('Asia')">
             <div class="card hover-card">
                 <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -36,10 +38,11 @@
                 <img class="card-img" src="assets/images/asia.jpg" alt="Destination 3">
             </div>
         </div>
-        <div class="container-fluid article-section">
-            <div class="row justify-content-center"> <!-- Center the content horizontally -->
-                <div class="col-lg-4" (click)="loadArticles('Africa')">
-                    <div class="card hover-card">
+
+        
+            <div class="row justify-content-center">
+                <div class="col-lg-4 mb-3" (click)="loadArticles('Africa')">
+                    <div class="card hover-card ">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
                             <h4 class="card-title">Africa</h4>
                             <div class="link d-flex">
@@ -48,8 +51,9 @@
                         <img class="card-img" src="assets/images/africa.jpg" alt="Destination 3">
                     </div>
                 </div>
-                <div class="col-lg-4" (click)="loadArticles('Oceania')">
-                    <div class="card hover-card">
+
+                <div class="col-lg-4 mb-3"(click)="loadArticles('Oceania')">
+                    <div class="card hover-card ">
                         <div class="card-img-overlay text-white d-flex flex-column justify-content-center">
                             <h4 class="card-title">Oceania</h4>
                             <div class="link d-flex">
@@ -59,21 +63,19 @@
                     </div>
                 </div>
             </div>
-        </div>
-        
+     
     </div>
 
 
-    <div *ngIf="selectedDestination">
-        <h2>Articles for {{ selectedDestination }}</h2>
+    <div class="selectedDestination" *ngIf="selectedDestination" id="articles-section">
+        <h1 style="font-size: 40px;">Discover {{ selectedDestination }}</h1>
         <div class="row">
-            <div class="col-md-6" *ngFor="let article of articles; let i = index">
+            <div class="col-md-4" *ngFor="let article of articles; let i = index">
                 <a [routerLink]="['/article', article.id]" class="card-link">
-                    <div class="card hover-card" style="width:100%;">
+                    <div class="card hover-card" >
                         <img class="card-img-top" [src]="article.postImgPath" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">{{ article.title }}</h5>
-                            <p class="card-text">{{ article.summary }}</p>
                             <a href="#" class="btn btn-primary">Read More</a>
                         </div>
                     </div>
@@ -81,7 +83,6 @@
             </div>
         </div>
     </div>
-    
 
 
-</div>
+
