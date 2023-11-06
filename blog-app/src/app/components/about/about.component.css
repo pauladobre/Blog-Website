@@ -1,0 +1,33 @@
+.background-image {
+    background: url('src/assets/images/about bg.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-title {
+    font-size: 100px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.article-section {
+    background-color: var(--beige);
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.text-center {
+    max-width: fit-content;
+    text-align: center;
+}
+
+h1 {
+    font-size: 70px;
+}
+
+.p-div {
+    max-width: 700px; 
+    text-align: center;
+}

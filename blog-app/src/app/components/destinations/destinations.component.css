@@ -1,8 +1,4 @@
-.article-section {
-    margin-top: 70px; 
-  }
-
-  .card{
+.card {
     margin-bottom: 30px;
     border: none;
     text-align: center;
@@ -39,19 +35,27 @@ a:hover {
     transform: scale(1.05);
 }
 
-.btn{
-background-color: var(--yellow);
-border: none;
+.btn {
+    background-color: var(--yellow);
+    border: none;
 }
 
 
-h1{
+h1 {
     margin-left: 20px;
 }
 
-.selectedDestination h1{
-font-size: 32px;
+.selectedDestination h1 {
+    font-size: 32px;
 }
 
-.selectedDestination{
+.background-image {
+    background: url('src/assets/images/destinations bg.png') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bg-title {
+    font-size: 100px;
+    font-family: 'Montserat';
 }

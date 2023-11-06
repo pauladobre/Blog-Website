@@ -7,10 +7,12 @@ import { HeaderComponent } from './components/header/header.component';
 import { HomeComponent } from './components/home/home.component';
 import { DestinationsComponent } from './components/destinations/destinations.component';
 import { ArticleComponent } from './components/article/article.component';
+import { TipsTricksComponent } from './components/tips-tricks/tips-tricks.component';
 
 const routes: Routes = [
   {path: 'post', component: SinglePostComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'tips&tricks', component: TipsTricksComponent},
   {path: 'contact', component: ContactComponent},
   { path: '', component: HomeComponent },
   {path:'destinations', component:DestinationsComponent},

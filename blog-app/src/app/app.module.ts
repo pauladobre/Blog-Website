@@ -19,6 +19,7 @@ import { TipsComponent } from './components/tips/tips.component';
 import { DestinationsComponent } from './components/destinations/destinations.component';
 import { CardImageComponent } from './components/card-image/card-image.component';
 import { ArticleComponent } from './components/article/article.component';
+import { TipsTricksComponent } from './components/tips-tricks/tips-tricks.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import { ArticleComponent } from './components/article/article.component';
     DestinationsComponent,
     CardImageComponent,
     ArticleComponent,
+    TipsTricksComponent,
   ],
   imports: [
     BrowserModule,
