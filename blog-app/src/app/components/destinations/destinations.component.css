@@ -59,3 +59,8 @@ h1 {
     font-size: 100px;
     font-family: 'Montserat';
 }
+
+
+@media (max-width: 576px) {
+  
+  }

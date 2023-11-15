@@ -3,3 +3,16 @@
         <h1 class="bg-title">TIPS & TRICKS</h1>
     </div>
 </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mt-3" *ngFor="let post of ttPosts">
+            <a [routerLink]="['/article', post.id]" class="card-link">
+                <div class="card hover-card">
+                    <img class="card-img-top" [src]="post.postImgPath" alt="Card image cap">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>

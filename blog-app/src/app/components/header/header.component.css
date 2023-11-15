@@ -1,10 +1,10 @@
 .header-image {
-  background-image: url("/assets/images/2header.png");
+  background-image: url("/assets/images/Hi.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
- 
+
 }
 
 .card-overlay {
@@ -16,12 +16,27 @@
 }
 
 
-.card{
-    border: none;
-    margin-left: 50px;
-    
+.card {
+  border: none;
+  margin-left: 50px;
+
 }
 
-.card-body{
+.card-body {
   margin-top: 150px;
+}
+
+@media (max-width: 576px) {
+  .header-image {
+    background-image: url("/assets/images/hi mobile.png");
+  }
+
+  h1, p{
+    color:white
+  }
+
+  h1{
+    font-size: 50px;
+  }
+  
 }

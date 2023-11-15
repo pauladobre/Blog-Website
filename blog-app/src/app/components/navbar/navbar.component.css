@@ -24,4 +24,12 @@
   .dropdown:hover .dropdown-menu {
     display: block;
   }
+
+
+  @media (max-width: 576px) {
+    nav {
+      height: auto; 
+    }
+  }
+  
   

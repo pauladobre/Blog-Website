@@ -67,4 +67,16 @@ export class PostService {
         })
       );
   }
+
+  loadTips() {
+    return this.asf.collection('posts', ref => ref.where('category.category',  '==', 'Tips & Tricks')).snapshotChanges().pipe(
+      map((actions: any[]) => {
+        return actions.map((a: { payload: { doc: { id: any; data: () => any; }; }; }) => {
+          const id = a.payload.doc.id;
+          const data = a.payload.doc.data();
+          return { ...data, id };
+        });
+      })
+    );
+  }
 }
