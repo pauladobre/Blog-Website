@@ -1,35 +1,48 @@
 .bg-blur {
-    background: transparent;
-    backdrop-filter: blur(10px);
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background: transparent;
+  backdrop-filter: blur(10px);
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.nav-link {
+  color: var(--text);
+  font-family: "Amatic SC", sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  margin-right: 41px;
+}
+
+nav {
+  height: 70px;
+}
+
+.navbar-brand {
+  margin-left: 41px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-link {
+  color: var(--text)
+}
+
+.nav-link.active {
+ text-decoration: underline var(--lime);
+}
+
+
+
+@media (max-width: 576px) {
+  nav {
+    height: auto;
   }
 
-  .nav-link{
-    color: var(--text);
-    font-family: "Amatic SC", sans-serif;
-    font-weight: bold;
-    font-size: 32px;
-    margin-right: 41px;
-  }
-
-  nav{
-    height: 70px;
-  }
-
-  .navbar-brand{
-    margin-left: 41px;
-  }
-
-  .dropdown:hover .dropdown-menu {
-    display: block;
+  .navbar-brand {
+    margin-left: 10px;
   }
 
 
-  @media (max-width: 576px) {
-    nav {
-      height: auto; 
-    }
-  }
-  
-  
+}

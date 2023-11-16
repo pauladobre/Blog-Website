@@ -1,5 +1,5 @@
 .header-image {
-  background-image: url("/assets/images/Hi.png");
+  background-image: url("/assets/images/Hi!.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -22,21 +22,44 @@
 
 }
 
-.card-body {
-  margin-top: 150px;
+h1,
+p {
+  color: white
 }
+
+.button{
+  filter: none;
+  background-color:#FFB400;
+  color: var(--text);
+}
+.button:hover{
+ 
+  background-color: var(--lime);
+  
+}
+.button{
+  filter: none;
+  background-color: var(--lime);
+  color: var(--text);
+}
+
 
 @media (max-width: 576px) {
   .header-image {
     background-image: url("/assets/images/hi mobile.png");
   }
 
-  h1, p{
-    color:white
+  h1,
+  p {
+    color: white
   }
 
-  h1{
+  h1 {
     font-size: 50px;
   }
-  
+
+  .card-body {
+    margin-top: 150px;
+  }
+
 }
