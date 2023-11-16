@@ -4,7 +4,6 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-
 }
 
 .card-overlay {
@@ -15,11 +14,9 @@
   align-items: center;
 }
 
-
 .card {
   border: none;
   margin-left: 50px;
-
 }
 
 h1,
@@ -27,22 +24,22 @@ p {
   color: white
 }
 
-.button{
-  filter: none;
-  background-color:#FFB400;
-  color: var(--text);
+p{
+  font-size: 20px;
 }
-.button:hover{
+h1{
+  font-size: 50px;
+}
+.button {
+  filter: none;
+  background-color: var(--yellow);
+  color: var(--text);
  
-  background-color: var(--lime);
-  
-}
-.button{
-  filter: none;
-  background-color: var(--lime);
-  color: var(--text);
 }
 
+.button:hover {
+  background-color:#d99904;;
+}
 
 @media (max-width: 576px) {
   .header-image {
