@@ -15,7 +15,7 @@ export class SinglePostComponent implements OnInit {
   constructor(private postService: PostService, private route: ActivatedRoute) { }
 
   ngOnInit(): void {
-    this.postService.loadPostsByCategory('Destinations').subscribe(posts => {
+    this.postService.loadTop().subscribe(posts => {
       this.destinationPosts = posts.slice(0, 3);
     });
     this.route.params.subscribe(val => {

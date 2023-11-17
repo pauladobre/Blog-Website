@@ -16,6 +16,7 @@ export class DestinationsComponent implements OnInit {
 
   constructor(private postService: PostService, private el: ElementRef, private renderer: Renderer2) { }
   isMobileScreen: boolean = false;
+  
   loadArticles(destination: string) {
     console.log('Loading articles for:', destination);
     this.selectedDestination = destination;
