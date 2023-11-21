@@ -37,7 +37,7 @@ h1::before {
     width: 130px;
     height: 14px;
     transform: skew(-12deg) translateX(-50%);
-    background: #9B0059;
+    background: var(--yellow);
     z-index: -1;
     border-radius: 10px;
 }
@@ -57,4 +57,12 @@ h1::before {
 
 .button:hover{
     background-color: #048885;
+}
+
+a{
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer; 
 }
