@@ -55,7 +55,7 @@ export class PostService {
   }
 
   loadPostsByDestination(destination: string) {
-    return this.asf.collection('posts', ref => ref.where('onTop', '==', true))
+    return this.asf.collection('posts', ref => ref.where('category.category', '==', destination))
       .snapshotChanges()
       .pipe(
         map((actions: any[]) => {
@@ -67,6 +67,7 @@ export class PostService {
         })
       );
   }
+
 
   loadTop() {
     return this.asf.collection('posts', ref => ref.where('onTop', '==', true)).snapshotChanges().pipe(
